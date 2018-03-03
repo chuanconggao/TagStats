@@ -11,7 +11,10 @@ setup(
     author_email="chuancong@gmail.com",
     url="https://github.com/chuanconggao/TagStats",
     download_url="https://github.com/chuanconggao/TagStats/tarball/0.1",
-    keywords=["data structure", "sentiment analysis"],
+    keywords=[
+        "data structure",
+        "sentiment analysis"
+    ],
     license="MIT",
     classifiers=[
         "Operating System :: OS Independent",

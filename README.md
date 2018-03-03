@@ -14,7 +14,7 @@ This package is available on PyPi. Just use `pip3 install -U tagstats` to instal
 
 # Usage
 
-You can simply call `compute(context, tagDict)`, where `content` is a list of lines and `tagDict` is a dictionary with each tag name as key and the respective set of key phrases as value.
+You can simply call `compute(content, tagDict)`, where `content` is a list of lines and `tagDict` is a dictionary with each tag name as key and the respective set of key phrases as value.
 
 ``` python
 from tagstats import compute

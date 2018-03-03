@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(
-    name="tagstats",
+    name="TagStats",
     packages=["tagstats"],
     version="0.1",
     description="Statistics for each tag's set of key phrases",

@@ -39,6 +39,8 @@ The output is a dictionary with each tag name as key and the respective totaled 
 
 You can change the default tokenizer, by specify a compiled regex as separator to `tagstats.tagstats.tokenizer`.
 
+You can pre-build the index by calling `tagstats.tagstats.tokenizer(tagDict)`, and later reuse it more than once as an optional parameter of `compute(content, tagDict, index)`. 
+
 # Tip
 
 I strongly encourage using PyPy instead of CPython to run the script for best performance.

@@ -3,17 +3,17 @@
 from collections import namedtuple, Counter
 import re
 
-__Node = namedtuple("Node", ["children", "tags"])
+Node = namedtuple("Node", ["children", "tags"])
 tokenizer = re.compile(r"^[^\w@#/+-]+|\W*\s+[^\w@#/+-]*", re.U)
 
-def __index(tagDict):
-    root = __Node({}, set())
+def index(tagDict):
+    root = Node({}, set())
 
     for tag, phrases in tagDict.items():
         for phrase in phrases:
             node = root
             for word in [w for w in tokenizer.split(phrase) if len(w) > 0]:
-                node = node.children.setdefault(word, __Node({}, set()))
+                node = node.children.setdefault(word, Node({}, set()))
             node.tags.add(tag)
 
     return root
@@ -37,8 +37,9 @@ def __search(root, line):
     return matched
 
 
-def compute(content, tagDict):
-    root = __index(tagDict)
+def compute(content, tagDict, root=None):
+    if root is None:
+        root = index(tagDict)
 
     counter = {
         tag: [0] * len(content)

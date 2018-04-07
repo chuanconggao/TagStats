@@ -5,12 +5,12 @@ from setuptools import setup
 setup(
     name="TagStats",
     packages=["tagstats"],
-    version="0.1",
+    version="0.1.1",
     description="Statistics for each tag's set of key phrases",
     author="Chuancong Gao",
     author_email="chuancong@gmail.com",
     url="https://github.com/chuanconggao/TagStats",
-    download_url="https://github.com/chuanconggao/TagStats/tarball/0.1",
+    download_url="https://github.com/chuanconggao/TagStats/tarball/0.1.1",
     keywords=[
         "data structure",
         "sentiment analysis"

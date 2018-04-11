@@ -10,7 +10,7 @@ The time complexity is $O(m^2 \cdot n)$, where $m$ is the maximum number of word
 
 # Installation
 
-This package is available on PyPi. Just use `pip3 install -U tagstats` to install it.
+This package is available on PyPi. Just use `pip3 install -U TagStats` to install it.
 
 # Usage
 

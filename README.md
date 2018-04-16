@@ -1,4 +1,6 @@
-[![PyPI version](https://badge.fury.io/py/TagStats.svg)](https://badge.fury.io/py/TagStats)
+[![PyPi version](https://img.shields.io/pypi/v/TagStats.svg)](https://pypi.python.org/pypi/TagStats/)
+[![PyPi pyversions](https://img.shields.io/pypi/pyversions/TagStats.svg)](https://pypi.python.org/pypi/TagStats/)
+[![PyPi license](https://img.shields.io/pypi/l/TagStats.svg)](https://pypi.python.org/pypi/TagStats/)
 
 A concise yet efficient implementation for computing the statistics of each tag's set of key phrases over input lines in Python 3.
 One of the major applications is for [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis), where each tag is a sentiment with the respective key phrases describing the sentiment.

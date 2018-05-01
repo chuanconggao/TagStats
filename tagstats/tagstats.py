@@ -12,7 +12,7 @@ def index(tagDict):
     for tag, phrases in tagDict.items():
         for phrase in phrases:
             node = root
-            for word in [w for w in tokenizer.split(phrase) if len(w) > 0]:
+            for word in [w for w in (tokenizer.split(phrase) if tokenizer else phrase) if len(w) > 0]:
                 node = node.children.setdefault(word, Node({}, set()))
             node.tags.add(tag)
 
@@ -49,7 +49,7 @@ def compute(content, tagDict, root=None):
     for i, line in enumerate(content):
         for tag, count in __search(
                 root,
-                [w for w in tokenizer.split(line) if len(w) > 0]
+                [w for w in (tokenizer.split(line) if tokenizer else line) if len(w) > 0]
             ).items():
             counter[tag][i] += count
 
